@@ -1,0 +1,28 @@
+@url = http://localhost:3000/api
+
+### FIND MANY
+GET {{url}}/products?page=1&limit=10
+
+### FIND ONE
+GET {{url}}/products/51
+
+### POST /products
+POST {{url}}/products
+Content-Type: application/json
+
+{
+  "name": "Macbook M3",
+  "price": 1050
+}
+
+### DELETE /products/1
+DELETE {{url}}/products/6
+
+### UPDATE /products/1
+PATCH  {{url}}/products/55
+Content-Type: application/json
+
+{
+  "name": "Macbook M3 250 GB",
+  "price": 1050
+}
