@@ -1,0 +1,33 @@
+@url = http://localhost:3000/api/orders
+
+### Get all orders
+GET {{url}}/?page=1&limit=10&status=CANCELLED
+
+### Get all orders status
+GET {{url}}/DELIVERED?page=1&limit=10
+
+### Get an order
+GET {{url}}/id/a66510a4-e29b-415d-9ee1-8e5b18f94be5
+
+### Create an order
+POST {{url}}
+Content-Type: application/json
+
+{
+    items: [
+        {
+            "productId": 1,
+            "price": 100,
+            "quantity": 2
+        }
+    ]
+}
+
+### Change Orders Status
+
+PATCH {{url}}/0802c0d3-b9ff-4bca-b5f7-1c8cd2fe15ad
+Content-Type: application/json
+
+{
+    "status": "DELIVERED"
+}

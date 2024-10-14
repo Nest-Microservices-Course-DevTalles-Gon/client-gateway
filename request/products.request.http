@@ -16,10 +16,10 @@ Content-Type: application/json
 }
 
 ### DELETE /products/1
-DELETE {{url}}/products/6
+DELETE {{url}}/products/51
 
 ### UPDATE /products/1
-PATCH  {{url}}/products/55
+PATCH  {{url}}/products/51
 Content-Type: application/json
 
 {
