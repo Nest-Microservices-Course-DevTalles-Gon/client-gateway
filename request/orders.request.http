@@ -1,24 +1,29 @@
 @url = http://localhost:3000/api/orders
 
 ### Get all orders
-GET {{url}}/?page=1&limit=10&status=CANCELLED
+GET {{url}}/?page=1&limit=10&status=PENDING
 
 ### Get all orders status
 GET {{url}}/DELIVERED?page=1&limit=10
 
 ### Get an order
-GET {{url}}/id/a66510a4-e29b-415d-9ee1-8e5b18f94be5
+GET {{url}}/id/605ede67-8273-453a-8269-8bdf0255dde0
 
 ### Create an order
 POST {{url}}
 Content-Type: application/json
 
 {
-    items: [
+    "items": [
         {
-            "productId": 1,
-            "price": 100,
-            "quantity": 2
+            "productId": 6,
+            "price": 50,
+            "quantity": 6
+        },
+         {
+            "productId": 10,
+            "price": 1000,
+            "quantity": 10
         }
     ]
 }
