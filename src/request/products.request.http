@@ -4,7 +4,7 @@
 GET {{url}}/products?page=1&limit=10
 
 ### FIND ONE
-GET {{url}}/products/51
+GET {{url}}/products/6
 
 ### POST /products
 POST {{url}}/products
