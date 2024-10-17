@@ -24,8 +24,6 @@ async function bootstrap() {
 
   await app.listen(envs.port);
 
-  console.log('Segundo Cambio')
-
   logger.log(`Server started on port ${envs.port}`);
 
 }
