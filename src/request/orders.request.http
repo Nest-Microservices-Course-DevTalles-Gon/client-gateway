@@ -11,7 +11,7 @@ GET {{url}}/id/38946e19-5fd1-4ff4-8e14-e7a6cbee2adc
 
 ### Create an order
 POST {{url}}
-Content-Type: application/json
+Content-Type: application/json 
 
 {
     "items": [

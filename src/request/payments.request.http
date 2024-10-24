@@ -1,0 +1,9 @@
+@url = http://localhost:3003/
+
+### Create a payment session
+POST {{url}}payments/webhook
+Content-Type: application/json
+
+{
+    "orderId": "id-order"
+}
