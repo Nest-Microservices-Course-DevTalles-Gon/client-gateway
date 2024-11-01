@@ -1,0 +1,26 @@
+@url = http://localhost:3000/api
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjQ5ZTEyNWM4MjhkMWZmNGRhNjM0ZCIsImVtYWlsIjoiZ29uemFsb2J1YXNzb0BnbWFpbC5jb20iLCJuYW1lIjoiR29uemFsbyBCdWFzc28iLCJpYXQiOjE3MzA0NTU1MDcsImV4cCI6MTczMDU0MTkwN30.K9NY-E732ML9Nh43OWcSwzLX3hadb4S00vdX4coenms
+
+### Register User
+POST {{url}}/auth/register
+Content-Type: application/json
+
+{
+    "name": "Gonzalo Buasso",
+    "email": "gonzalobuasso4@gmail.com",
+    "password": "Nest1730Lan!"
+}
+
+### Login User
+POST {{url}}/auth/login
+Content-Type: application/json
+
+{
+    "email":"gonzalobuasso@gmail.com",
+    "password":"Nest1730Lan!"
+}
+
+### Verify User
+GET {{url}}/auth/verify
+Authorization: Bearer {{token}}
