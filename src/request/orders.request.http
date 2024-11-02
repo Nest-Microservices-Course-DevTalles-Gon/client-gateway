@@ -7,7 +7,7 @@ GET {{url}}/?page=1&limit=10&status=PENDING
 GET {{url}}/DELIVERED?page=1&limit=10
 
 ### Get an order
-GET {{url}}/id/38946e19-5fd1-4ff4-8e14-e7a6cbee2adc
+GET {{url}}/id/7b878dd2-0794-4fe3-aea7-5c9ac2d9d759
 
 ### Create an order
 POST {{url}}
